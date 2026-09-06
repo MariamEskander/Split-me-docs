@@ -31,7 +31,7 @@ h2 { font-size: 1.15rem; margin: 38px 0 10px; }
 h3 { font-size: 0.98rem; margin: 26px 0 6px; color: var(--mint); }
 p, li { color: var(--muted); }
 p { margin: 0 0 14px; }
-ul { padding-left: 20px; margin: 0 0 16px; }
+ul { padding-inline-start: 20px; margin: 0 0 16px; }
 li { margin-bottom: 7px; }
 strong { color: var(--text); font-weight: 600; }
 a { color: var(--teal); text-decoration: none; }
@@ -58,3 +58,20 @@ footer {
 @media (prefers-color-scheme: light) {
   /* The brand is dark-first; keep it dark rather than inventing a light theme. */
 }
+
+/* Arabic: taller lines, and no letter-spacing anywhere — spacing breaks the
+   cursive joins between Arabic letters. */
+[dir="rtl"] body,
+body[dir="rtl"] {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Arabic", "Segoe UI",
+               "Noto Naskh Arabic", "Geeza Pro", Tahoma, sans-serif;
+  line-height: 1.9;
+}
+[dir="rtl"] .tagline { letter-spacing: normal; }
+[dir="rtl"] h1 { letter-spacing: normal; }
+
+/* Language switch */
+.langs { text-align: center; margin-top: 14px; font-size: 0.85rem; }
+.langs a { color: var(--muted); }
+.langs a.on { color: var(--teal); font-weight: 600; }
+.langs span { color: var(--faint); margin: 0 8px; }
