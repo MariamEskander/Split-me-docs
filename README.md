@@ -1,6 +1,6 @@
-# Split Me — support & privacy
+# Billy — support & privacy
 
-The public support page and privacy policy for the **Split Me** iOS app, served
+The public support page and privacy policy for the **Billy** iOS app, served
 by GitHub Pages. The App Store requires both URLs before a listing can be
 submitted.
 
